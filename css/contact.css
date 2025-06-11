@@ -1,0 +1,24 @@
+.mainSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  gap: 40px;
+}
+
+.firstSection,
+.secondSection {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.secondSection h4 {
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+img {
+  margin-top: 10px;
+}

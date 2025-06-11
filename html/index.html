@@ -1,140 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saloni's Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins?query=poppins">
-    <style>
-        body{
-            background-color:rgb(0,0,33);
-            color: white;
-            font-family: poppins;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(10, 10, 56);
-        }
-        .left{
-            font-size: 1.5rem;
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 23px;
-        }
-        .right ul li a{
-            color: white;
-        }
-        .right ul li a:hover{
-            color: bisque;
-            font-size: 1.05rem;
-        }
-        .firstSection{
-            display: flex;
-            justify-content: space-around;
-            margin: 23px 0px;
-        }
-        .firstSection > div{
-            width: 30%;
-        }
+    <link rel="stylesheet" href="../css/index.css">
 
-        .leftSection {
-            font-size: 2rem;
-            margin: 50px 0px;
-            justify-content: space-between;
-            width: 50%;
-        }
-        .leftSection > div{
-            font-size: 2rem;
-        }
-        .purple{
-            color: blueviolet;
-        }
-        .rightSection img{
-            width: 80%;
-            margin: 23px 0px;
-        }
-        main hr{
-            margin: 40px 80px;
-            
-        }
-        .secondSection h1{
-            text-align: center;
-            font-size: 1.6rem;
-        }
-        .secondSection{
-            height: 80vh;
-        }
-        .secondSection .box{
-            background-color: white;
-            height: 1px;
-            margin: 35px 130px;
-            display: flex;
-            
-        }
-        .secondSection .vertical{
-            height: 50px;
-            width: 1px;
-            background-color: white;
-            margin: 0px 155px;
-        }
-        .acad-title{
-            color: white;
-            position: relative;
-            width: 150px;
-            top: 50px;
-        }
-        .acad-desc{
-            color: rgb(203, 190, 190);
-            top: 60px;
-            position: relative;
-            width:150px ;
-        }
-        #element{
-            color: rgb(147, 78, 211);
-        }
-        .footer{
-            background-color: rgb(132, 160, 172);
-            height: 300px; 
-            justify-content: space-around;
-            
-        }
-        .footer .box{
-            display: flex;
-            justify-content: space-around;
-            height: 250px;
-        }
-        .footer img{
-            width: 50px;
-            margin: 25px 63px;
-            border-radius:55%;
-        }
-        .footer img:hover{
-            width: 60px;
-        }
-        .footer .name{
-            position: relative;
-            margin: 0px 60px;
-             top: -19px;
-            
-        }
-        .footer a:hover{
-            color: rgb(5, 37, 107);
-        }
-        .footer .copy{
-            display: flex;
-             justify-content: center;
-             color: black;
-        }
-    </style>
 </head>
+<script src="../javascript/index.js"></script>
+
 <body>
     <header>
         <nav>
@@ -145,86 +20,105 @@
                     <li><a href="../html/About.html">About</a></li>
                     <li><a href="../html/projects.html">projects</a></li>
                     <li><a href="../html/contact.html">Contact</a></li>
+                    <button id="click" onclick="clicked()">click me</button>
                 </ul>
 
             </div>
         </nav>
     </header>
-    
-    <main>
+
+    <main class="firstDivision">
         <section class="firstSection">
             <div class="leftSection">
-                Hi , <span class="purple">Saloni</span> here..  
+                Hi , <span class="purple">Saloni</span> here..
                 <div>I am a Passionate</div>
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="../images/port_img.jpg" alt=""></div>
+                <img src="../images/port_img.jpg" alt="">
+            </div>
             </div>
         </section>
         <section class="secondSection">
             <hr>
             <h1>Academics</h1>
-            <div class="box">
-                <div class="vertical">
-                    <div class="acad-title">Birla Institute of Technology,Mesra</div>
-                    <div class="acad-desc">B.Tech in CSE</div>
-                </div>
-                <div class="vertical">
-                    <div class="acad-title">Ursuline Inter College</div>
-                    <div class="acad-desc">ISC PCM
-                        <div>Percentage : 90.80%</div>
+            
+                <div class="box">
+                    <div class="vertical">
+                        <div class="acad-title"><span style="font-size: 30px;">&bullet;</span> Birla Institute of
+                            Technology,Mesra</div>
+                        <div class="acad-desc">B.Tech in CSE</div>
+                    </div>
+                    <div class="vertical">
+                        <div class="acad-title"><span style="font-size: 30px;">&bullet;</span> Ursuline Inter College
+                        </div>
+                        <div class="acad-desc">ISC PCM
+                            <div>Percentage : 90.80%</div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="acad-title"><span style="font-size: 30px;">&bullet;</span> Elizabeth girl's high
+                            school</div>
+                        <div class="acad-desc">class : 10
+                            <div>Percentage : 86%</div>
+                        </div>
                     </div>
                 </div>
-                <div class="vertical">
-                    <div class="acad-title">Elizabeth girl's high school</div>
-                    <div class="acad-desc">class : 10
-                        <div>Percentage : 86%</div>
-                    </div>
-                </div>
-            </div>
+           
         </section>
     </main>
     <footer class="footer">
-       <div class="box">
-        <div class="first">
-            <a href="https://www.linkedin.com/in/saloni-kerketta-855a65285/">
-                <img src="../images/linkedin-img.png" alt=""><div class="name">linkedin</div></a>
-                
+        <div class="box">
+            <div class="first">
+                <a href="https://www.linkedin.com/in/saloni-kerketta-855a65285/">
+                    <img src="../images/linkedin-img.png" alt="">
+                    <div class="name">linkedin</div>
+                </a>
+
+            </div>
+            <div class="second">
+                <a href="https://github.com/Saloni-Kerketta">
+                    <img src="../images/github-img.jpg" alt="">
+                    <div class="name">github</div>
+                </a>
+            </div>
+            <div class="third">
+                <a href="https://leetcode.com/u/saloni-kerketta/">
+                    <img src="../images/leetcode-img.png" alt="">
+                    <div class="name">leetcode</div>
+                </a>
+            </div>
+            <div class="fourth">
+                <a href="https://www.hackerrank.com/profile/salonikerketta48">
+                    <img src="../images/hackerrank-img.png" alt="">
+                    <div class="name">hackerrank</div>
+                </a>
+            </div>
+            <div class="fifth">
+                <a href="">
+                    <img src="../images/codeforces-img.jpg" alt="">
+                    <div class="name">codeforces</div>
+                </a>
+            </div>
         </div>
-        <div class="second">
-            <a href="https://github.com/Saloni-Kerketta">
-                <img src="../images/github-img.jpg"  alt="" ><div class="name">github</div>
-            </a>
+        <div class="copy">
+            <p>&copy copyright reserved</p>
         </div>
-        <div class="third">
-            <a href="https://leetcode.com/u/saloni-kerketta/">
-                <img src="../images/leetcode-img.png" alt=""><div class="name">leetcode</div>
-            </a>
-        </div>
-        <div class="fourth">
-            <a href="https://www.hackerrank.com/profile/salonikerketta48">
-                <img src="../images/hackerrank-img.png" alt=""><div class="name">hackerrank</div>
-            </a>
-        </div>
-        <div class="fifth">
-            <a href="">
-                <img src="../images/codeforces-img.jpg" alt=""><div class="name">codeforces</div>
-            </a>
-        </div>
-    </div>
-    <div class="copy"><p>&copy copyright reserved</p></div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web developer', 'Competative Programmer'],
-      typeSpeed: 50,
-    });
-  </script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Competative Programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <div>
+        <script src="../javascript/index.js"></script>
+    </div>
 </body>
+
 </html>

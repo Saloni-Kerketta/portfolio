@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saloni's Portfolio</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <style>
     body {
@@ -55,12 +56,35 @@
         justify-content: space-around;
         height: -23px;
         width: 200px;
-        border-radius:55%;
+        border-radius: 55%;
     }
-    main .firstSection img:hover{
+
+    main .firstSection img:hover {
         width: 250px;
     }
+
+    /* ✅ Flexbox Layout */
+    .mainSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 80px;
+        gap: 40px;
+    }
+
+    .firstSection,
+    .secondSection {
+        flex: 1;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .secondSection h4 {
+        margin-bottom: 10px;
+        color: bisque;
+    }
 </style>
+
 
 <body>
     <header>
@@ -78,16 +102,30 @@
         </nav>
     </header>
     <main>
-        <section class="firstSection">
-            <div>
-                Connect with me on linkedin .
-                <div>
-                    <a href="https://www.linkedin.com/in/saloni-kerketta-855a65285/">
-                    <img src="../images/linkedin-img.png" alt="">
-                </a>
-                </div>
-            </div>
-        </section>
+        <section class="mainSection">
+  <!-- Left Side: LinkedIn Section -->
+  <div class="firstSection">
+    <div>
+      Connect with me on LinkedIn.
+      <div>
+        <a href="https://www.linkedin.com/in/saloni-kerketta-855a65285/">
+          <img src="../images/linkedin-img.png" width="80px" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side: Contact Info Section -->
+  <div class="secondSection">
+    <div>
+      <h4>Contact Information</h4>
+      <p>Email: salonikerketta48@gmail.com</p>
+      <p>Phone: +91-8235494545</p>
+    </div>
+  </div>
+</section>
+
+        
     </main>
 
 </body>
